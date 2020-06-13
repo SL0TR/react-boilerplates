@@ -1,10 +1,13 @@
 import React from 'react';
+import AppStyles from 'styles';
+import { AppProvider } from 'components';
 
 function App() {
   return (
-    <div className="App">
+    <AppProvider>
+      <AppStyles />
       <p>init</p>
-    </div>
+    </AppProvider>
   );
 }
 
