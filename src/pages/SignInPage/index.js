@@ -1,14 +1,8 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import { UserAuth } from 'features';
 
 function SignInPage() {
-  return (
-    <div>
-      <p>
-        <FormattedMessage id="Sign In" />
-      </p>
-    </div>
-  );
+  return <UserAuth />;
 }
 
 export default SignInPage;

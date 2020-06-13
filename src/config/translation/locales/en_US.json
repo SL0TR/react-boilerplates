@@ -1,3 +1,12 @@
 {
-  "Sign In": "Sign In"
+  "Sign In": "Sign In",
+  "is required!": "is required!",
+  "is not valid!": "is not valid!",
+  "should be at least": "should be at least",
+  "should be max": "should be max",
+  "characters": "characters",
+  "Password": "Password",
+  "Username": "Username",
+  "Email": "Email",
+  "Submit": "Submit"
 }

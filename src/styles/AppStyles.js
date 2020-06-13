@@ -11,20 +11,21 @@ const AppStyles = createGlobalStyle`
     text-rendering: optimizeLegibility;
   }
 
-  /* FONTS */
+
   html {
     font-size: 62.5%;
 
     body {
-      font-family: 'Cera Pro', sans-serif;
+      font-family: 'Roboto', sans-serif;
       line-height: 155%;
+      font-size: 1.6rem;
 
       input, button, select, optgroup, textarea, span, li, a, button {
-        font-family: 'Cera Pro', sans-serif;
+        font-family: 'Roboto', sans-serif;
       }
 
       h1, h2, h3, h4, h5, h6 {
-        font-family: 'Cera Pro', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: bold;
       }
 
@@ -58,6 +59,12 @@ const AppStyles = createGlobalStyle`
 
     }
 
+  }
+
+  /* Ant Design Overrides */
+
+  .ant-form-item-explain {
+    text-transform: capitalize;
   }
 
   /* Utilities  */
