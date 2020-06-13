@@ -1,9 +1,12 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 function SignInPage() {
   return (
     <div>
-      <p>SignIn Page</p>
+      <p>
+        <FormattedMessage id="Sign In" />
+      </p>
     </div>
   );
 }
