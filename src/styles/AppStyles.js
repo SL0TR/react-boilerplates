@@ -21,7 +21,6 @@ const AppStyles = createGlobalStyle`
 
       input, button, select, optgroup, textarea, span, li, a, button {
         font-family: 'Cera Pro', sans-serif;
-
       }
 
       h1, h2, h3, h4, h5, h6 {
