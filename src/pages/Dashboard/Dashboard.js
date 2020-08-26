@@ -30,7 +30,7 @@ export default function Dashboard() {
               height: '100vh',
             }}
           >
-            <Content className="isomorphicContent" style={styles.content}>
+            <Content style={styles.content}>
               <DashboardRoutes />
             </Content>
           </Layout>
