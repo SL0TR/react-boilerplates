@@ -10,5 +10,13 @@
   "Email": "Email",
   "Submit": "Submit",
   "Login": "Login",
-  "Home Page": "Home Page"
+  "Home Page": "Home Page",
+  "Sorry, the page you visited does not exist.": "Sorry, the page you visited does not exist.",
+  "Go Back": "Go Back",
+  "404": "404",
+  "Demo Page": "Demo Page",
+  "Dashboard": "Dashboard",
+  "Settings": "Settings",
+  "Logout": "Logout",
+  "Successfully logged in!": "Successfully logged in!"
 }

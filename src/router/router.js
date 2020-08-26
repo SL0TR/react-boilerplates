@@ -12,6 +12,7 @@ import { PUBLIC_ROUTE } from './appRoutes';
 
 const Dashboard = lazy(() => import('pages/Dashboard'));
 const SignInPage = lazy(() => import('pages/SignInPage'));
+const NotFound = lazy(() => import('pages/NotFoundPage'));
 
 function PrivateRoute({ children, ...rest }) {
   const isLoggedIn = useSelector(state => state.Auth.idToken);
@@ -66,6 +67,7 @@ function Routes() {
             <PrivateRoute path="/dashboard">
               <Dashboard />
             </PrivateRoute>
+            <Route component={NotFound} />
           </Switch>
         </Router>
       </Suspense>

@@ -1,9 +1,9 @@
 import React, { lazy, Suspense } from 'react';
 import { Route, useRouteMatch, Switch } from 'react-router-dom';
 import { PRIVATE_ROUTE } from 'router';
-// import { Loader } from 'components/utility';
+import { Spin } from 'antd';
 
-// const NotFound = lazy(() => import('pages/NotFoundPage'));
+const NotFound = lazy(() => import('pages/NotFoundPage'));
 
 const routes = [
   {
@@ -16,7 +16,7 @@ const routes = [
 export default function AppRouter() {
   const { url } = useRouteMatch();
   return (
-    <Suspense fallback={<p>Loading..</p>}>
+    <Suspense fallback={<Spin />}>
       <Switch>
         {routes.map((route, i) => (
           <Route
@@ -27,7 +27,7 @@ export default function AppRouter() {
             <route.component />
           </Route>
         ))}
-        {/* <Route component={NotFound} /> */}
+        <Route component={NotFound} />
       </Switch>
     </Suspense>
   );

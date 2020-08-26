@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout } from 'antd';
-// import Sidebar from 'features/Sidebar/Sidebar';
-// import Topbar from 'features/Topbar/Topbar';
+import Sidebar from 'features/Sidebar';
+import Topbar from 'features/Topbar';
 import DashboardRoutes from './DashboardRoutes';
 
 import { DashboardContainer, DashboardGlobalStyles } from './styles';
@@ -21,11 +21,11 @@ export default function Dashboard() {
     <DashboardContainer>
       <DashboardGlobalStyles />
       <Layout style={{ height: '100vh' }}>
-        {/* <Topbar /> */}
+        <Topbar />
         <Layout style={styles.layout}>
-          {/* <Sidebar /> */}
+          <Sidebar />
           <Layout
-            className="isoContentMainLayout"
+            className="main-content"
             style={{
               height: '100vh',
             }}

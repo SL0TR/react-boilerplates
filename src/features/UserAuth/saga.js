@@ -3,12 +3,11 @@ import { takeLatest, put } from 'redux-saga/effects';
 import { message } from 'antd';
 import { login, loginRequest } from './reducer';
 
-export function* loginSaga() {
-  // const { data } = yield call(Auth.login, payload);
+export function* loginSaga({ payload: { successText } }) {
+  // const { data } = yield call(Auth.login, formData);
 
   // if (data?.key) {
-  console.log('called!');
-  message.success('Successfully logged in!');
+  message.success(successText);
   yield put(login('dummyjwttoken'));
   // }
 }

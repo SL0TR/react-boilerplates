@@ -18,6 +18,6 @@ const AuthSlice = createSlice({
 });
 
 export const loginRequest = createAction('auth/login_request');
-export const { login } = AuthSlice.actions;
+export const { login, logout } = AuthSlice.actions;
 
 export default AuthSlice;

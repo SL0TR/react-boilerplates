@@ -11,8 +11,13 @@ function UserAuthForm() {
   const history = useHistory();
   const dispatch = useDispatch();
 
-  const onFinish = values => {
-    dispatch(loginRequest(values));
+  const onFinish = formData => {
+    dispatch(
+      loginRequest({
+        formData,
+        successText: `${messages['Successfully logged in!']}`,
+      }),
+    );
     history.push('/dashboard');
   };
 
