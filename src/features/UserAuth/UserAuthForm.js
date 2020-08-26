@@ -1,17 +1,26 @@
 import React from 'react';
 import { Row, Form, Input, Button } from 'antd';
 import { useIntl } from 'react-intl';
+import { useDispatch } from 'react-redux';
 import getValidateMessages from 'lib/helpers/getValidationMessages';
+import { useHistory } from 'react-router-dom';
+import { loginRequest } from './reducer';
 
 function UserAuthForm() {
   const { messages } = useIntl();
-  // const onFinish = values => {};
+  const history = useHistory();
+  const dispatch = useDispatch();
+
+  const onFinish = values => {
+    dispatch(loginRequest(values));
+    history.push('/dashboard');
+  };
 
   return (
     <Form
       name="basic"
       initialValues={{ remember: true }}
-      // onFinish={onFinish}
+      onFinish={onFinish}
       validateMessages={getValidateMessages(messages, 'name')}
     >
       <Form.Item

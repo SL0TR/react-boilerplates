@@ -7,5 +7,7 @@ export const PUBLIC_ROUTE = {
 };
 
 export const PRIVATE_ROUTE = {
-  DASHBOARD: '/',
+  DASHBOARD_HOME: '/',
+  DASHBOARD: 'dashboard',
+  HOME: '',
 };

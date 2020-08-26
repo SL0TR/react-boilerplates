@@ -1,14 +1,54 @@
 import React, { lazy, Suspense } from 'react';
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import {
+  Route,
+  Redirect,
+  BrowserRouter as Router,
+  Switch,
+} from 'react-router-dom';
 import { Spin } from 'antd';
-import { PUBLIC_ROUTE } from './appUrls';
+import { useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
+import { PUBLIC_ROUTE } from './appRoutes';
+
+const Dashboard = lazy(() => import('pages/Dashboard'));
+const SignInPage = lazy(() => import('pages/SignInPage'));
+
+function PrivateRoute({ children, ...rest }) {
+  const isLoggedIn = useSelector(state => state.Auth.idToken);
+
+  return (
+    <Route
+      {...rest}
+      render={({ location }) =>
+        isLoggedIn ? (
+          children
+        ) : (
+          <Redirect
+            to={{
+              pathname: PUBLIC_ROUTE.SIGN_IN,
+              state: { from: location },
+            }}
+          />
+        )
+      }
+    />
+  );
+}
+
+PrivateRoute.propTypes = {
+  children: PropTypes.node,
+  rest: PropTypes.any,
+};
 
 function Routes() {
-  const SignInPage = lazy(() => import('pages/SignInPage'));
   const publicRoutes = [
     {
       path: PUBLIC_ROUTE.LANDING,
       exact: true,
+      component: SignInPage,
+    },
+    {
+      path: PUBLIC_ROUTE.SIGN_IN,
       component: SignInPage,
     },
   ];
@@ -23,7 +63,9 @@ function Routes() {
                 <route.component />
               </Route>
             ))}
-            <p>Test</p>
+            <PrivateRoute path="/dashboard">
+              <Dashboard />
+            </PrivateRoute>
           </Switch>
         </Router>
       </Suspense>
