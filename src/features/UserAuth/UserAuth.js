@@ -29,7 +29,7 @@ const LangSwithcer = styled(LangSwitch)`
 
 function UserAuth() {
   const location = useLocation();
-  const isLoggedIn = useSelector(state => state.Auth.idToken);
+  const isLoggedIn = useSelector(state => state.Auth.token);
 
   const [redirectToReferrer, setRedirectToReferrer] = useState(false);
   useEffect(() => {

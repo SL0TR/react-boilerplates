@@ -13,6 +13,7 @@
     "axios": "^0.20.0",
     "axios-progress-bar": "^1.2.0",
     "craco-less": "^1.17.0",
+    "cross-env": "^7.0.2",
     "nprogress": "^0.2.0",
     "polished": "^3.6.5",
     "prop-types": "^15.7.2",
@@ -30,8 +31,10 @@
     "styled-components": "^5.1.1"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
+    "start": "cross-env REACT_APP_DEPLOY_SCOPE=development PORT=3005  craco start",
+    "build": "cross-env REACT_APP_DEPLOY_SCOPE=development craco build",
+    "start-prod": "cross-env REACT_APP_DEPLOY_SCOPE=production PORT=3005  craco start",
+    "build-prod": "cross-env REACT_APP_DEPLOY_SCOPE=production craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
     "lint": "eslint .",

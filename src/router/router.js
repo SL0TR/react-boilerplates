@@ -15,7 +15,7 @@ const SignInPage = lazy(() => import('pages/SignInPage'));
 const NotFound = lazy(() => import('pages/NotFoundPage'));
 
 function PrivateRoute({ children, ...rest }) {
-  const isLoggedIn = useSelector(state => state.Auth.idToken);
+  const isLoggedIn = useSelector(state => state.Auth.token);
 
   return (
     <Route
