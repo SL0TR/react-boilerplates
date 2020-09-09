@@ -37,7 +37,7 @@
     "build-prod": "cross-env REACT_APP_DEPLOY_SCOPE=production craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "lint": "eslint .",
+    "lint": "eslint . --max-warnings=0",
     "serve": "serve -s build"
   },
   "eslintConfig": {

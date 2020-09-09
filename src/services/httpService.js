@@ -9,9 +9,8 @@ const http = axios.create({
   },
 });
 
-http.interceptors.request.use(function (config) {
+http.interceptors.request.use(config => {
   const state = store.getState();
-
   const token = `token ${state?.Auth?.token}`;
 
   if (token) {
