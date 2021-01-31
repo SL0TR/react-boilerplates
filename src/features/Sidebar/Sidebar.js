@@ -1,7 +1,6 @@
 import React from 'react';
 import { Layout } from 'antd';
-import { useDispatch, useSelector } from 'react-redux';
-import { toggleOpenDrawer } from 'store';
+import { useSelector } from 'react-redux';
 import options from './options';
 import SidebarWrapper from './styles';
 import SidebarMenu from './SidebarMenu';
@@ -9,22 +8,7 @@ import SidebarMenu from './SidebarMenu';
 const { Sider } = Layout;
 
 export default function Sidebar() {
-  const dispatch = useDispatch();
-  const { collapsed, openDrawer } = useSelector(state => state.App);
-
-  // const isCollapsed = collapsed && !openDrawer;
-
-  const onMouseEnter = () => {
-    if (collapsed && openDrawer === false) {
-      dispatch(toggleOpenDrawer());
-    }
-  };
-
-  const onMouseLeave = () => {
-    if (collapsed && openDrawer === true) {
-      dispatch(toggleOpenDrawer());
-    }
-  };
+  const { collapsed } = useSelector(state => state.App);
 
   return (
     <SidebarWrapper>
@@ -34,8 +18,6 @@ export default function Sidebar() {
         width={240}
         className="sidebar shadow"
         collapsed={collapsed}
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
         style={{ backgroundColor: '#fff' }}
       >
         <img

@@ -4,6 +4,7 @@ import { useIntl } from 'react-intl';
 import { useDispatch } from 'react-redux';
 import getValidateMessages from 'lib/helpers/getValidationMessages';
 import { useHistory } from 'react-router-dom';
+import { PRIVATE_ROUTE } from 'router';
 import { loginRequest } from './reducer';
 
 function UserAuthForm() {
@@ -18,7 +19,7 @@ function UserAuthForm() {
         successText: `${messages['Successfully logged in!']}`,
       }),
     );
-    history.push('/dashboard');
+    history.push(`${PRIVATE_ROUTE.HOME}${PRIVATE_ROUTE.DASHBOARD}`);
   };
 
   return (
