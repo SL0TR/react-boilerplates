@@ -1,68 +1,89 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+  <br>
+  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K" alt="React Dashboard Boilerplate" width="200">
+  <br>
+    React Dashboard Boilerplate
+  <br>
+</h1>
 
-## Available Scripts
+<h4 align="center">A React Dashboard Boilerplate built to Scale</h4>
 
-In the project directory, you can run:
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#download">Download</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#related">Related</a> •
+  <a href="#license">License</a>
+</p>
 
-### `yarn start`
+## Key Features
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Built with CRA but extendable :fire:
+  - Comes with the latest CRA scaripts and config
+  - To extend the CRA webpack config, use `craco.config.js` file. No need to eject
+- Redux and Redux Saga but with less boilerplate :chart_with_upwards_trend:
+  - Redux Toolkit configured with React Redux and Redux Saga for very little boilerplate
+  - React Redux Hooks used for even more clean code
+- Ant Design :blue_heart:
+  - Configurable Ant theme variables out of the box
+  - Localized Ant Design Component for better multilingual support
+- Eslint and Prettier configured with git hooks :cop:
+  - Eslint and prettier configured together for auto save format and error checks
+  - No git commit allowed if errors and warnings are present
+- Styled Components :nail_care:
+- Global HTTP error handler :raised_hands:
+- Develepment scope based App config file for deployment :rocket:
+- Codesplitting :zap:
+- Multilingual :speak_no_evil:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## How To Use
 
-### `yarn test`
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. Recommended to use [Yarn](https://classic.yarnpkg.com/en/docs/install/#windows-stable) for the project.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+From your command line:
 
-### `yarn build`
+```bash
+# Clone this repository
+$ git clone repo-link
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Go into the repository
+$ cd react-dashboard-boilerplate
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# Install dependencies
+$ yarn install or npm i
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Run the app for development scope
+$ yarn start
 
-### `yarn eject`
+# Run the app for production scope
+$ yarn start-prod
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Build the app
+$ yarn build
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Serve the app locally
+$ yarn build
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
 
-## Learn More
+Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Credits
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This software uses the following open source packages:
 
-### Code Splitting
+- [React](https://reactjs.org/)
+- [React Redux](https://react-redux.js.org/)
+- [Ant Design](https://ant.design/)
+- [Styled Components](https://styled-components.com/)
+- [Redux Saga](https://redux-saga.js.org/)
+- [React Intl](https://formatjs.io/docs/react-intl/)
+- [React Router](https://reactrouter.com/)
+- [React Router](https://www.axios.com/)
+- And more..
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## License
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+MIT
