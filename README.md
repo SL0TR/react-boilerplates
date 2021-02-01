@@ -20,7 +20,7 @@
 - :fire: Built with CRA but extendable
   - Comes with the latest CRA scripts and config
   - To extend the CRA webpack config, use `craco.config.js` file. No need to eject
-- :chart_with_upwards_trend: Redux and Redux Saga but with less boilerplate <a href="/tree/master/src/store">More on</a>
+- :chart_with_upwards_trend: Redux and Redux Saga but with less boilerplate <a href="/src/store">More on</a>
   - Redux Toolkit configured with React Redux and Redux Saga for very little boilerplate
   - React Redux Hooks used for even more clean code
   - React Persist configured for easier localstorage integration
@@ -93,7 +93,7 @@ This software uses the following open source packages:
 - [Redux Saga](https://redux-saga.js.org/)
 - [React Intl](https://formatjs.io/docs/react-intl/)
 - [React Router](https://reactrouter.com/)
-- [Axios](https://www.axios.com/)
+- [Axios](https://github.com/axios/axios)
 - And more..
 
 ## License
