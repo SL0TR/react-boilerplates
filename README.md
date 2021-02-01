@@ -30,11 +30,26 @@
 - :cop: Eslint and Prettier configured with git hooks
   - Eslint and prettier configured together for auto save format and error checks
   - No git commit allowed if errors and warnings are present
+- :raised_hands: Global HTTP error and auth handler
+  - Custom axios middlewares to handle errors on each request by default. But If needed, custom error handling also can be done with the error details sent by the middleware
+  - Auth Token is sent by default if present
+  - Progressbar animation added on each HTTP request
 - :nail_care: Styled Components
-- :raised_hands: Global HTTP error handler
-- :rocket: Develepment scope based App config file for deployment
+  - Component based styling
+  - Custom media queries with JS added as utility with accordance to Ant design breakpoints
 - :zap: Codesplitting
-- :speak_no_evil: Multilingual
+  - Native React Lazy loaded pages/components with Suspense
+  - Custom loader animation added
+- :capital_abcd: Multilingual
+  - By default EN and BN json files are added.
+  - Easily add new translation in the config folder
+- :art: Less and Bootstrap utility classes
+  - For margin padding, width and many more utility classes are added and available
+  - less loader added
+- :rocket: Develepment scope based App config file for deployment
+  - App can have different configs, keys for staging, dev or prod and many more
+  - Modify and update the `.env` file to store url/key data for different scope
+  - Don't forget to add the `.env` file on the `.gitignore`
 
 ## How To Use
 
