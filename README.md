@@ -23,6 +23,7 @@
 - :chart_with_upwards_trend: Redux and Redux Saga but with less boilerplate
   - Redux Toolkit configured with React Redux and Redux Saga for very little boilerplate
   - React Redux Hooks used for even more clean code
+  - React Persist configured for easier localstorage integration
 - :blue_heart: Ant Design
   - Configurable Ant theme variables out of the box
   - Localized Ant Design Component for better multilingual support
@@ -66,8 +67,6 @@ $ yarn build
 
 ```
 
-Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
-
 ## Credits
 
 This software uses the following open source packages:
@@ -79,7 +78,7 @@ This software uses the following open source packages:
 - [Redux Saga](https://redux-saga.js.org/)
 - [React Intl](https://formatjs.io/docs/react-intl/)
 - [React Router](https://reactrouter.com/)
-- [React Router](https://www.axios.com/)
+- [Axios](https://www.axios.com/)
 - And more..
 
 ## License
