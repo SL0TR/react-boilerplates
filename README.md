@@ -11,31 +11,29 @@
 <p align="center">
   <a href="#key-features">Key Features</a> •
   <a href="#how-to-use">How To Use</a> •
-  <a href="#download">Download</a> •
   <a href="#credits">Credits</a> •
-  <a href="#related">Related</a> •
   <a href="#license">License</a>
 </p>
 
 ## Key Features
 
-- Built with CRA but extendable :fire:
+- :fire: Built with CRA but extendable
   - Comes with the latest CRA scripts and config
   - To extend the CRA webpack config, use `craco.config.js` file. No need to eject
-- Redux and Redux Saga but with less boilerplate :chart_with_upwards_trend:
+- :chart_with_upwards_trend: Redux and Redux Saga but with less boilerplate
   - Redux Toolkit configured with React Redux and Redux Saga for very little boilerplate
   - React Redux Hooks used for even more clean code
-- Ant Design :blue_heart:
+- :blue_heart: Ant Design
   - Configurable Ant theme variables out of the box
   - Localized Ant Design Component for better multilingual support
-- Eslint and Prettier configured with git hooks :cop:
+- :cop: Eslint and Prettier configured with git hooks
   - Eslint and prettier configured together for auto save format and error checks
   - No git commit allowed if errors and warnings are present
-- Styled Components :nail_care:
-- Global HTTP error handler :raised_hands:
-- Develepment scope based App config file for deployment :rocket:
-- Codesplitting :zap:
-- Multilingual :speak_no_evil:
+- :nail_care: Styled Components
+- :raised_hands: Global HTTP error handler
+- :rocket: Develepment scope based App config file for deployment
+- :zap: Codesplitting
+- :speak_no_evil: Multilingual
 
 ## How To Use
 
