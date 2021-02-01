@@ -20,7 +20,7 @@
 - :fire: Built with CRA but extendable
   - Comes with the latest CRA scripts and config
   - To extend the CRA webpack config, use `craco.config.js` file. No need to eject
-- :chart_with_upwards_trend: Redux and Redux Saga but with less boilerplate
+- :chart_with_upwards_trend: Redux and Redux Saga but with less boilerplate <a href="/tree/master/src/store">More on</a>
   - Redux Toolkit configured with React Redux and Redux Saga for very little boilerplate
   - React Redux Hooks used for even more clean code
   - React Persist configured for easier localstorage integration
