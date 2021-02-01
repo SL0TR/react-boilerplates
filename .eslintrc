@@ -15,7 +15,8 @@
     "react/jsx-curly-newline": "off",
     "camelcase": "off",
     "react/jsx-wrap-multilines": "off",
-    "react/forbid-prop-types": "off"
+    "react/forbid-prop-types": "off",
+    "no-unused-vars": "warn"
   },
   "parser": "babel-eslint",
   "env": {
