@@ -1,4 +1,4 @@
-## Feature Pattern based folder structure
+## Custom App config based on development scope/phase
 
 > Example directory layout
 
