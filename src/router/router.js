@@ -10,7 +10,7 @@ import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import { PUBLIC_ROUTE } from './appRoutes';
 
-const Dashboard = lazy(() => import('pages/Dashboard'));
+const Dashboard = lazy(() => import('features/Dashboard'));
 const SignInPage = lazy(() => import('pages/SignInPage'));
 const NotFound = lazy(() => import('pages/NotFoundPage'));
 
