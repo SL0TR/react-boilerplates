@@ -1,1 +1,1 @@
-export { breakpoints, media, isScreenSize } from './media-query';
+export { breakpoints, media, isScreenSize } from './js/media-query';

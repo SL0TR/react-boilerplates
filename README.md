@@ -21,7 +21,7 @@
 - :fire: Built with CRA but extendable
   - Comes with the latest CRA scripts and config
   - To extend the CRA webpack config, use `craco.config.js` file. No need to eject
-- :chart_with_upwards_trend: Redux and Redux Saga but with less boilerplate <a href="/src/store">More on</a>
+- :chart_with_upwards_trend: Redux and Redux Saga but with less boilerplate. See <a href="/src/store">store</a>
 
 - :blue_heart: Ant Design
 
@@ -33,20 +33,20 @@
   - Eslint and prettier configured together for auto save format and error checks
   - No git commit allowed if errors and warnings are present
 
-- :raised_hands: Global HTTP error and auth handler <a href="/src/services">More on</a>
+- :raised_hands: Global HTTP error and auth handler. See <a href="/src/services">services</a>
 
-- :nail_care: Styled Components and <a href="/src/styles">More on</a>
+- :nail_care: Styled Components and more goodies on <a href="/src/styles">styles</a>
 
 - :zap: Codesplitting
 
   - Native React Lazy loaded pages/components with Suspense
   - Custom loader animation added
 
-- :capital_abcd: Multilingual <a href="/src/config/translation">More on</a>
+- :capital_abcd: Multilingual. See <a href="/src/config">config</a>
 
-- :art: Less and Bootstrap utility classes <a href="/src/styles/utilities">More on</a>
+- :art: Less and Bootstrap utility classes. See <a href="/src/styles">styles</a>
 
-- :rocket: Develepment scope based App config file for deployment <a href="/src/config/app">More on</a>
+- :rocket: Develepment scope based App config file for deployment. See <a href="/src/config">config</a>
 
 ## How To Use
 
@@ -119,13 +119,23 @@ $ yarn build
 This software uses the following open source packages:
 
 - [React](https://reactjs.org/)
-- [React Redux](https://react-redux.js.org/)
 - [Ant Design](https://ant.design/)
 - [Styled Components](https://styled-components.com/)
+- [React Redux](https://react-redux.js.org/)
 - [Redux Saga](https://redux-saga.js.org/)
+- [@reduxjs/toolkit](https://redux-toolkit.js.org/)
+- [redux-logger](https://github.com/LogRocket/redux-logger)
+- [redux-persist](https://github.com/rt2zz/redux-persist)
 - [React Intl](https://formatjs.io/docs/react-intl/)
 - [React Router](https://reactrouter.com/)
+- [@ant-design/icons](https://github.com/ant-design/ant-design-icons)
 - [Axios](https://github.com/axios/axios)
+- [Craco](https://github.com/gsoft-inc/craco)
+- [@testing-library/react](https://testing-library.com/docs/react-testing-library/intro/)
+- [polished](https://polished.js.org/docs/)
+- [eslint](https://eslint.org/)
+- [prettier](https://prettier.io/)
+- [husky](https://typicode.github.io/husky/#/)
 - And more..
 
 ## License
