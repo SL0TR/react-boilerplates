@@ -15,4 +15,4 @@
     │   │
     │   ├── entries             # JS object config for each locale
     │   ├── locales             # Json files for each locale containing keys and their translation
-    │   └── production.js
+    │   └── index.js            # Entry export file for the folder
