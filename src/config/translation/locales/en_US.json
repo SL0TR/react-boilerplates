@@ -18,5 +18,6 @@
   "Dashboard": "Dashboard",
   "Settings": "Settings",
   "Logout": "Logout",
-  "Successfully logged in!": "Successfully logged in!"
+  "Successfully logged in!": "Successfully logged in!",
+  "Sorry, something went wrong!": "Sorry, something went wrong!"
 }

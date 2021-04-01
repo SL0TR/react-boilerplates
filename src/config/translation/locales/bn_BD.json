@@ -18,5 +18,6 @@
   "Dashboard": "ড্যাশবোর্ড",
   "Settings": "সেটিংস",
   "Logout": "প্রস্থান",
-  "Successfully logged in!": "সফলভাবে লগ ইন হয়েছে!"
+  "Successfully logged in!": "সফলভাবে লগ ইন হয়েছে!",
+  "Sorry, something went wrong!": "দুঃখিত, কিছু ভুল হয়েছে!"
 }

@@ -30,7 +30,7 @@ function UserAuthForm() {
       validateMessages={getValidateMessages(messages, 'name')}
     >
       <Form.Item
-        className="mb-1"
+        className="mb-3"
         name="email"
         rules={[{ required: true }, { type: 'email' }]}
         hasFeedback

@@ -6,6 +6,8 @@
     "@ant-design/icons": "^4.4.0",
     "@craco/craco": "^6.1.0",
     "@reduxjs/toolkit": "^1.5.0",
+    "@sentry/react": "^6.2.4",
+    "@sentry/tracing": "^6.2.4",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.2",
@@ -67,6 +69,7 @@
     "eslint-plugin-react-hooks": "4.2.0",
     "husky": "^4.3.8",
     "prettier": "^2.2.1",
+    "serve": "^11.3.2",
     "source-map-explorer": "^2.5.2"
   },
   "husky": {
