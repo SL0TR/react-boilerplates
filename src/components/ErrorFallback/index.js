@@ -1,8 +1,19 @@
+import React, { useEffect } from 'react';
 import { Result } from 'antd';
-import React from 'react';
 import PropTypes from 'prop-types';
+import { getWithExpiry, setWithExpiry } from 'lib/helpers';
 
 function ErrorFallback({ error }) {
+  useEffect(() => {
+    const chunkFailedMessage = /Loading chunk [\d]+ failed/;
+    if (error?.message && chunkFailedMessage.test(error.message)) {
+      if (!getWithExpiry('chunk_failed')) {
+        setWithExpiry('chunk_failed', 'true', 10000);
+        window.location.reload();
+      }
+    }
+  }, [error.error]);
+
   return (
     <Result
       status="500"
