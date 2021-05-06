@@ -6,13 +6,17 @@ import { getWithExpiry, setWithExpiry } from 'lib/helpers';
 function ErrorFallback({ error }) {
   useEffect(() => {
     const chunkFailedMessage = /Loading chunk [\d]+ failed/;
-    if (error?.message && chunkFailedMessage.test(error.message)) {
+    if (
+      error?.error?.message &&
+      chunkFailedMessage.test(error?.error.message)
+    ) {
+      console.log('chunk failed error!');
       if (!getWithExpiry('chunk_failed')) {
         setWithExpiry('chunk_failed', 'true', 10000);
         window.location.reload();
       }
     }
-  }, [error.error]);
+  }, [error]);
 
   return (
     <Result
