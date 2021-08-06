@@ -1,7 +1,7 @@
 import { takeLatest, put, call } from 'redux-saga/effects';
-import { Auth } from 'api';
 import { message } from 'antd';
 import { login, loginRequest } from './reducer';
+import { Auth } from './api';
 
 export function* loginSaga({ payload: { successText } }) {
   const { data } = yield call(Auth.test);
