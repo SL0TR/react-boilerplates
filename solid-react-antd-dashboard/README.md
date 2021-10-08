@@ -1,12 +1,12 @@
 <h1 align="center">
   <br>
-  <img src="https://i.imgur.com/7nkwu15.png" alt="React Boilerplates" width="200">
+  <img src="https://i.imgur.com/7nkwu15.png" alt="React Dashboard Boilerplate" width="200">
   <br>
-    Solid, Solid-Dashboard, Light React
+    React Dashboard Boilerplate
   <br>
 </h1>
 
-<h4 align="center">React Dashboard Boilerplates for every need</h4>
+<h4 align="center">A React Dashboard Boilerplate built to Scale</h4>
 
 <p align="center">
   <a href="#key-features">Key Features</a> •

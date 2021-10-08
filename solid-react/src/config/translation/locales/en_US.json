@@ -1,0 +1,23 @@
+{
+  "Sign In": "Sign In",
+  "is required!": "is required!",
+  "is not valid!": "is not valid!",
+  "should be at least": "should be at least",
+  "should be max": "should be max",
+  "characters": "characters",
+  "Password": "Password",
+  "Username": "Username",
+  "Email": "Email",
+  "Submit": "Submit",
+  "Login": "Login",
+  "Home Page": "Home Page",
+  "Sorry, the page you visited does not exist.": "Sorry, the page you visited does not exist.",
+  "Go Back": "Go Back",
+  "404": "404",
+  "Demo Page": "Demo Page",
+  "Dashboard": "Dashboard",
+  "Settings": "Settings",
+  "Logout": "Logout",
+  "Successfully logged in!": "Successfully logged in!",
+  "Sorry, something went wrong!": "Sorry, something went wrong!"
+}

@@ -1,0 +1,23 @@
+{
+  "Sign In": "সাইন ইন করুন",
+  "is required!": "এটি দরকার!",
+  "is not valid!": "এটি বৈধ নয়!",
+  "should be at least": "কমপক্ষে হওয়া উচিত",
+  "should be max": "সর্বাধিক হওয়া উচিত",
+  "characters": "অক্ষর",
+  "Password": "পাসওয়ার্ড",
+  "Username": "ব্যবহারকারীর নাম",
+  "Email": "ইমেল",
+  "Submit": "জমা দিন",
+  "Login": "প্রবেশ করুন",
+  "Home Page": "হোম পৃষ্ঠা",
+  "Sorry, the page you visited does not exist.": "দুঃখিত, আপনি যে পৃষ্ঠাটি পরিদর্শন করেছেন তা বিদ্যমান নেই।",
+  "Go Back": "ফিরে যান",
+  "404": "৪০৪",
+  "Demo Page": "ডেমো পৃষ্ঠা",
+  "Dashboard": "ড্যাশবোর্ড",
+  "Settings": "সেটিংস",
+  "Logout": "প্রস্থান",
+  "Successfully logged in!": "সফলভাবে লগ ইন হয়েছে!",
+  "Sorry, something went wrong!": "দুঃখিত, কিছু ভুল হয়েছে!"
+}
