@@ -7,7 +7,7 @@
 </h1>
 
 
-## Types of boilerplatye
+## Types
 
 - :shield: Solid React
 
