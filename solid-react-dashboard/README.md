@@ -59,7 +59,7 @@ From your command line:
 $ git clone repo-link
 
 # Go into the repository
-$ cd react-dashboard-boilerplate
+$ cd solid-react-dashboard
 
 # Install dependencies
 $ yarn install or npm i

@@ -23,10 +23,6 @@
   - To extend the CRA webpack config, use `craco.config.js` file. No need to eject
 - :chart_with_upwards_trend: Redux and Redux Saga but with less boilerplate. See <a href="/src/store">store</a>
 
-- :blue_heart: Ant Design
-
-  - Configurable Ant theme variables out of the box. To change theme variables, go and modify/add on `craco.config.js`
-  - Localized Ant Design Component for better multilingual support
 
 - :cop: Eslint and Prettier configured with git hooks
 
@@ -59,7 +55,7 @@ From your command line:
 $ git clone repo-link
 
 # Go into the repository
-$ cd react-dashboard-boilerplate
+$ cd solid-react
 
 # Install dependencies
 $ yarn install or npm i
@@ -119,7 +115,6 @@ $ yarn build
 This software uses the following open source packages:
 
 - [React](https://reactjs.org/)
-- [Ant Design](https://ant.design/)
 - [Styled Components](https://styled-components.com/)
 - [React Redux](https://react-redux.js.org/)
 - [Redux Saga](https://redux-saga.js.org/)
