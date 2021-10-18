@@ -21,6 +21,7 @@
 - :fire: Built with CRA but extendable
   - Comes with the latest CRA scripts and config
   - To extend the CRA webpack config, use `craco.config.js` file. No need to eject
+  - Esbuild added for zipping fast builds!
 - :chart_with_upwards_trend: Redux and Redux Saga but with less boilerplate. See <a href="/src/store">store</a>
 
 
